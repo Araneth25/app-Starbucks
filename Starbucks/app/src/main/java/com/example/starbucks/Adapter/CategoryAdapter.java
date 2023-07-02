@@ -19,6 +19,10 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
     ArrayList<CategoryDomain> categoryDomains;
 
+    public CategoryAdapter(ArrayList<CategoryDomain> categoryDomains) {
+        this.categoryDomains = categoryDomains;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -37,14 +41,14 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 1:{
-                picUrl = "frappucino";
+                picUrl = "frappuccino";
                 break;
             }
             case 2:{
                 picUrl = "granoscafe";
                 break;
             }
-            case 4:{
+            case 3:{
                 picUrl = "merchandising";
                 break;
             }
@@ -58,7 +62,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
     @Override
     public int getItemCount() {
-        return 0;
+        return categoryDomains.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder{
