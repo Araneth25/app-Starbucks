@@ -1,9 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Starbucks" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+    <style name="Theme.Starbucks" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+         <item name="colorPrimary">#0E5535</item>
+        <item name="colorPrimaryVariant">#0E5535</item>
+         <item name="colorOnPrimary">@color/white</item>
 
-    <style name="Theme.Starbucks" parent="Base.Theme.Starbucks" />
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
 </resources>
