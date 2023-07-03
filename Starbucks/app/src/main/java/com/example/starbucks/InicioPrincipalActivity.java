@@ -49,7 +49,7 @@ public class InicioPrincipalActivity extends AppCompatActivity {
         ArrayList<CategoryDomain> categoryList = new ArrayList<>();
 
         categoryList.add(new CategoryDomain("Cafe","cafe"));
-        categoryList.add(new CategoryDomain("Frappuccino","frappuccino"));
+        categoryList.add(new CategoryDomain("Frappuccino","frap"));
         categoryList.add(new CategoryDomain("Granos cafe","granoscafe"));
         categoryList.add(new CategoryDomain("Merchandising","merchandising"));
 
