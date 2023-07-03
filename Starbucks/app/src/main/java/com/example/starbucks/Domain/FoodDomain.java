@@ -4,12 +4,12 @@ public class FoodDomain {
 
     private String title;
     private String pic;
-    private Double star;
+    private Double precio;
 
-    public FoodDomain(String title, String pic, Double star) {
+    public FoodDomain(String title, String pic, Double precio) {
         this.title = title;
         this.pic = pic;
-        this.star = star;
+        this.precio = precio;
     }
 
     public String getTitle() {
@@ -28,11 +28,11 @@ public class FoodDomain {
         this.pic = pic;
     }
 
-    public Double getStar() {
-        return star;
+    public Double getPrecio() {
+        return precio;
     }
 
-    public void setStar(Double star) {
-        this.star = star;
+    public void setPrecio(Double precio) {
+        this.precio = precio;
     }
 }
