@@ -48,10 +48,22 @@ public class InicioPrincipalActivity extends AppCompatActivity {
 
         ArrayList<CategoryDomain> categoryList = new ArrayList<>();
 
-        categoryList.add(new CategoryDomain("Cafe","cafe"));
-        categoryList.add(new CategoryDomain("Frappuccino","frap"));
-        categoryList.add(new CategoryDomain("Granos cafe","granoscafe"));
+        categoryList.add(new CategoryDomain("Café en granos","granoscafe"));
         categoryList.add(new CategoryDomain("Merchandising","merchandising"));
+        categoryList.add(new CategoryDomain("Boxes","boxess"));
+        categoryList.add(new CategoryDomain("Keke","keke"));
+        categoryList.add(new CategoryDomain("Café en grano","cafe"));
+        categoryList.add(new CategoryDomain("Sándwiches","sandwich"));
+        categoryList.add(new CategoryDomain("Duos","duos"));
+        categoryList.add(new CategoryDomain("Postres","postres"));
+        categoryList.add(new CategoryDomain("Frappuccinos","frap"));
+        categoryList.add(new CategoryDomain("Refreshers","refresher"));
+        categoryList.add(new CategoryDomain("Espresso Frío","espressofrio"));
+        categoryList.add(new CategoryDomain("Shaken Espresso","shakenespres"));
+        categoryList.add(new CategoryDomain("Espresso","espresso"));
+        categoryList.add(new CategoryDomain("Nuevas bebidas","nuevasbebidas"));
+        categoryList.add(new CategoryDomain("Otras bebidas","otrasbebidas"));
+        categoryList.add(new CategoryDomain("Otros alimentos","otrosalimentoss"));
 
         adapter = new CategoryAdapter(categoryList);
         recyclerViewCategory.setAdapter(adapter);
