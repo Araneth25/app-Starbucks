@@ -53,8 +53,10 @@ public class InicioPrincipalActivity extends AppCompatActivity {
         categoryList.add(new CategoryDomain("Boxes","boxess"));
         categoryList.add(new CategoryDomain("Keke","keke"));
         categoryList.add(new CategoryDomain("Café en grano","cafe"));
+        categoryList.add(new CategoryDomain("Promociones","promociones"));
         categoryList.add(new CategoryDomain("Sándwiches","sandwich"));
         categoryList.add(new CategoryDomain("Duos","duos"));
+        categoryList.add(new CategoryDomain("Recién Horneados","recienhorneados"));
         categoryList.add(new CategoryDomain("Postres","postres"));
         categoryList.add(new CategoryDomain("Frappuccinos","frap"));
         categoryList.add(new CategoryDomain("Refreshers","refresher"));

@@ -57,46 +57,54 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 5:{
-                picUrl = "sandwich";
+                picUrl = "promociones";
                 break;
             }
             case 6:{
-                picUrl = "duos";
+                picUrl = "sandwich";
                 break;
             }
             case 7:{
-                picUrl = "postres";
+                picUrl = "duos";
                 break;
             }
             case 8:{
-                picUrl = "frap";
+                picUrl="recienhorneados";
                 break;
             }
             case 9:{
-                picUrl = "refresher";
+                picUrl = "postres";
                 break;
             }
             case 10:{
-                picUrl = "espressofrio";
+                picUrl = "frap";
                 break;
             }
             case 11:{
-                picUrl = "shakenespres";
+                picUrl = "refresher";
                 break;
             }
             case 12:{
-                picUrl = "espresso";
+                picUrl = "espressofrio";
                 break;
             }
             case 13:{
-                picUrl = "nuevasbebidas";
+                picUrl = "shakenespres";
                 break;
             }
             case 14:{
-                picUrl = "otrasbebidas";
+                picUrl = "espresso";
                 break;
             }
             case 15:{
+                picUrl = "nuevasbebidas";
+                break;
+            }
+            case 16:{
+                picUrl = "otrasbebidas";
+                break;
+            }
+            case 17:{
                 picUrl = "otrosalimentoss";
                 break;
             }
