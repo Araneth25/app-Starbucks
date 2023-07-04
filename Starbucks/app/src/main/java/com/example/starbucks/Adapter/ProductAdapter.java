@@ -34,6 +34,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.Viewhold
     public void onBindViewHolder(@NonNull Viewholder holder, int position) {
         holder.title.setText(foodDomains.get(position).getTitle());
         holder.precio.setText(String.valueOf(foodDomains.get(position).getPrecio()));
+        holder.star.setText(String.valueOf(foodDomains.get(position).getStar()));
 
         int drawableResourceId = holder.itemView.getContext().getResources().getIdentifier(foodDomains.get(position).getPic(),"drawable",holder.itemView.getContext().getPackageName());
         Glide.with(holder.itemView.getContext())
@@ -47,7 +48,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.Viewhold
     }
 
     public class Viewholder extends RecyclerView.ViewHolder{
-        TextView title, precio;
+        TextView title, precio, star;
         ImageView pic;
 
         public Viewholder(@NonNull View itemView){
@@ -55,6 +56,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.Viewhold
             title = itemView.findViewById(R.id.title);
             pic = itemView.findViewById(R.id.pic);
             precio = itemView.findViewById(R.id.precio);
+            star = itemView.findViewById(R.id.star);
         }
     }
 }
