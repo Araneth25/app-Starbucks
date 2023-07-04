@@ -57,23 +57,23 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 5:{
-                picUrl = "promociones";
+                picUrl = "promocioness";
                 break;
             }
             case 6:{
-                picUrl = "sandwich";
+                picUrl = "sand";
                 break;
             }
             case 7:{
-                picUrl = "duos";
+                picUrl = "duosg";
                 break;
             }
             case 8:{
-                picUrl="recienhorneados";
+                picUrl="recienhorneadoss";
                 break;
             }
             case 9:{
-                picUrl = "postres";
+                picUrl = "postress";
                 break;
             }
             case 10:{
@@ -81,7 +81,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 11:{
-                picUrl = "refresher";
+                picUrl = "refreshers";
                 break;
             }
             case 12:{
@@ -89,11 +89,11 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 13:{
-                picUrl = "shakenespres";
+                picUrl = "shakenes";
                 break;
             }
             case 14:{
-                picUrl = "espresso";
+                picUrl = "espres";
                 break;
             }
             case 15:{
@@ -101,7 +101,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 16:{
-                picUrl = "otrasbebidas";
+                picUrl = "otrasbebid";
                 break;
             }
             case 17:{
