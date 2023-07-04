@@ -34,8 +34,10 @@ public class InicioPrincipalActivity extends AppCompatActivity {
         recyclerViewFoodList.setLayoutManager(linearLayoutManager);
 
         ArrayList<FoodDomain> foodDomains = new ArrayList<>();
-        foodDomains.add(new FoodDomain("Frezzer chocolate", "freezdes", 9.10));
-        foodDomains.add(new FoodDomain("Cafe con crema de vainilla", "cafecremades", 10.53));
+        foodDomains.add(new FoodDomain("Croissant de mantequilla", "cromante", 5.83));
+        foodDomains.add(new FoodDomain("Sweet Pack", "spack", 35.00));
+        foodDomains.add(new FoodDomain("Desayuno para dos", "desayunoparados", 25.00));
+        foodDomains.add(new FoodDomain("Desayuno familiar", "desayunofamiliar", 49.00));
 
         adapter2 = new ProductAdapter(foodDomains);
         recyclerViewFoodList.setAdapter(adapter2);
