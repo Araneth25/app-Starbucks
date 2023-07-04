@@ -37,7 +37,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
         switch (position){
             case 0:{
-                picUrl = "granoscafe";
+                picUrl = "espres";
                 break;
             }
             case 1:{
@@ -93,7 +93,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 14:{
-                picUrl = "espres";
+                picUrl = "newespres";
                 break;
             }
             case 15:{

@@ -51,7 +51,7 @@ public class InicioPrincipalActivity extends AppCompatActivity {
 
         ArrayList<CategoryDomain> categoryList = new ArrayList<>();
 
-        categoryList.add(new CategoryDomain("Café en granos","granoscafe"));
+        categoryList.add(new CategoryDomain("Café en granos","espres"));
         categoryList.add(new CategoryDomain("Merchandising","merchandising"));
         categoryList.add(new CategoryDomain("Boxes","boxess"));
         categoryList.add(new CategoryDomain("Keke","keke"));
@@ -65,7 +65,7 @@ public class InicioPrincipalActivity extends AppCompatActivity {
         categoryList.add(new CategoryDomain("Refreshers","refreshers"));
         categoryList.add(new CategoryDomain("Espresso Frío","espressofrio"));
         categoryList.add(new CategoryDomain("Shaken Espresso","shakenes"));
-        categoryList.add(new CategoryDomain("Espresso","espres"));
+        categoryList.add(new CategoryDomain("Espresso","newespres"));
         categoryList.add(new CategoryDomain("Nuevas bebidas","nuevasbebid"));
         categoryList.add(new CategoryDomain("Otras bebidas","otrasbebidas"));
         categoryList.add(new CategoryDomain("Otros alimentos","otrosalimentoss"));
