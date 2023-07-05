@@ -34,11 +34,11 @@ public class InicioPrincipalActivity extends AppCompatActivity {
         recyclerViewFoodList.setLayoutManager(linearLayoutManager);
 
         ArrayList<FoodDomain> foodDomains = new ArrayList<>();
-        foodDomains.add(new FoodDomain("Croissant de mantequilla", "cromante", 5.83, 4));
-        foodDomains.add(new FoodDomain("Sweet Pack", "spack", 35.00,5));
-        foodDomains.add(new FoodDomain("Desayuno para dos", "desayunoparados", 25.00,4.5));
-        foodDomains.add(new FoodDomain("Desayuno familiar", "desayunofamiliar", 49.00,5));
-        foodDomains.add(new FoodDomain("Duo engreimiento", "duoen", 9.00,5));
+        foodDomains.add(new FoodDomain("Croissant de mantequilla","Nuestro croissant de mantequilla es un delicioso y clásico producto de panadería, apreciado por su sabor excepcional y su cuidadosa elaboración artesanal. Con una apariencia tentadora, se presenta como un hojaldre triangular, que a simple vista revela su textura dorada y escamosa.", "cromante", 5.83, 4));
+        foodDomains.add(new FoodDomain("Sweet Pack", "Es una selección de dulces irresistibles que te deleitarán en cada bocado. Con una variedad de sabores y texturas, es la opción perfecta para satisfacer tus antojos dulces. En Starbucks, nos encanta endulzar tu día con nuestro Sweet Pack","spack", 35.00,5));
+        foodDomains.add(new FoodDomain("Desayuno para dos", "Es la elección perfecta para comenzar el día con energía. Incluye una combinación de bebidas calientes y frescas, junto con deliciosos panes y pastelería recién horneada. Nos esforzamos por ofrecer desayunos memorables que satisfagan todos los gustos y te preparen para un gran día","dosdesayuno", 25.00,4.5));
+        foodDomains.add(new FoodDomain("Desayuno familiar", "En Starbucks Perú es una opción ideal para compartir momentos especiales en familia. Incluye una variedad de bebidas y delicias matutinas que todos disfrutarán. En Starbucks nos preocupamos por crear experiencias memorables y sabores que unan a las familias en cada desayuno.","desayunofamiliar", 49.00,5));
+        foodDomains.add(new FoodDomain("Duo engreimiento", "Es una opción perfecta para consentirte a ti mismo o a alguien especial. Combina una bebida deliciosa con un postre tentador, ofreciendo una experiencia de indulgencia en solo dos elementos.","engreduo", 9.00,5));
 
         adapter2 = new ProductAdapter(foodDomains);
         recyclerViewFoodList.setAdapter(adapter2);

@@ -1,17 +1,46 @@
 package com.example.starbucks.Domain;
 
-public class FoodDomain {
+import java.io.Serializable;
+
+public class FoodDomain implements Serializable {
 
     private String title;
+    private String description;
     private String pic;
     private Double precio;
     private double star;
+    private int numberCart;
+
 
     public FoodDomain(String title, String pic, Double precio, double star) {
         this.title = title;
         this.pic = pic;
         this.precio = precio;
         this.star = star;
+    }
+
+    public FoodDomain(String title, String description, String pic, Double precio, double star) {
+        this.title = title;
+        this.description = description;
+        this.pic = pic;
+        this.precio = precio;
+        this.star = star;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getNumberCart() {
+        return numberCart;
+    }
+
+    public void setNumberCart(int numberCart) {
+        this.numberCart = numberCart;
     }
 
     public String getTitle() {

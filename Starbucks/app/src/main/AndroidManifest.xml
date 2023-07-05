@@ -17,6 +17,7 @@
             android:exported="false" />
         <activity
             android:name=".InicioPrincipalActivity"
+            android:windowSoftInputMode="stateHidden"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

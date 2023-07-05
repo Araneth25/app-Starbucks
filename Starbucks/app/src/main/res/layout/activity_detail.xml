@@ -28,7 +28,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/cafeengranocusco" />
+                    app:srcCompat="@drawable/cromante" />
 
                 <ImageView
                     android:id="@+id/imageView9"
@@ -56,7 +56,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Café en grano Perú Cusco"
+                        android:text="Croissant de mantequilla"
                         android:textColor="@color/black"
                         android:textSize="22dp"
                         android:textStyle="bold" />
@@ -66,7 +66,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="S/ 26.00"
+                        android:text="S/ 5.83"
                         android:textAlignment="viewEnd"
                         android:textColor="#2EA235"
                         android:textSize="20sp"
@@ -162,11 +162,12 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="24dp"
-                    android:layout_marginStart="330dp"
-                    android:text="Disfrute de nuestro café en grano Perú Cusco donde es proveniente de nuestra amada de tierra, en Starbucks disfrutamos con Perú."
+                    android:layout_marginStart="24dp"
+                    android:text="Nuestro croissant de mantequilla es un delicioso y clásico producto de panadería, apreciado por su sabor excepcional y su cuidadosa elaboración artesanal. Con una apariencia tentadora, se presenta como un hojaldre triangular, que a simple vista revela su textura dorada y escamosa."
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
