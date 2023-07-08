@@ -57,7 +57,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 5:{
-                picUrl = "promocioness";
+                picUrl = "promo";
                 break;
             }
             case 6:{
@@ -65,15 +65,15 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 7:{
-                picUrl = "duosg";
+                picUrl = "duos";
                 break;
             }
             case 8:{
-                picUrl="recienhorneadoss";
+                picUrl="recienhorneados";
                 break;
             }
             case 9:{
-                picUrl = "postress";
+                picUrl = "postres";
                 break;
             }
             case 10:{
@@ -81,7 +81,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 11:{
-                picUrl = "refreshers";
+                picUrl = "refresher";
                 break;
             }
             case 12:{
@@ -89,7 +89,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 13:{
-                picUrl = "shakenes";
+                picUrl = "shakenesp";
                 break;
             }
             case 14:{
@@ -97,15 +97,15 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 break;
             }
             case 15:{
-                picUrl = "nuevasbebidas";
+                picUrl = "nuevasbebida";
                 break;
             }
             case 16:{
-                picUrl = "otrasbebid";
+                picUrl = "otrasbebida";
                 break;
             }
             case 17:{
-                picUrl = "otrosalimentoss";
+                picUrl = "otrosalimentos";
                 break;
             }
         }
