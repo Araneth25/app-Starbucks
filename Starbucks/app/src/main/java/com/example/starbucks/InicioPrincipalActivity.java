@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.example.starbucks.Adapter.CategoryAdapter;
 import com.example.starbucks.Adapter.ProductAdapter;
@@ -26,6 +28,16 @@ public class InicioPrincipalActivity extends AppCompatActivity {
 
         recyclerViewCategory();
         recyclerViewFoodList();
+        bottomNavigation();
+    }
+
+    private void bottomNavigation() {
+        LinearLayout homeBtn = findViewById(R.id.homeBtn);
+        LinearLayout cartBtn = findViewById(R.id.CartBtn);
+
+        homeBtn.setOnClickListener(v -> startActivity(new Intent(InicioPrincipalActivity.this, InicioPrincipalActivity.class)));
+
+        cartBtn.setOnClickListener(v -> startActivity(new Intent(InicioPrincipalActivity.this, CartActivity.class)));
     }
 
     private void recyclerViewFoodList() {

@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/titleTxt" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/totalEachItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -58,7 +58,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/category_background"
+        android:background="@drawable/grey_background"
         app:layout_constraintBottom_toBottomOf="@+id/precioEachItem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/precioEachItem">
@@ -84,7 +84,7 @@
             android:text="0"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/plusCartBtn"
             app:layout_constraintStart_toEndOf="@+id/minusCartBtn"

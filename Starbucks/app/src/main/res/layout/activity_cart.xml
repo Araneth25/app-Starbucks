@@ -7,15 +7,31 @@
     android:background="#f3f3f3"
     tools:context=".CartActivity">
 
+    <TextView
+        android:id="@+id/emptyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu carrito está vacio"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollViewC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
+        android:id="@+id/scrollViewC"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="24dp" >
+            android:padding="24dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,12 +67,11 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:text="Resumen del pedido"
                 android:textColor="@color/black"
-                android:textStyle="bold"
                 android:textSize="18sp"
-                android:layout_marginTop="16dp"
-                />
+                android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -76,29 +91,29 @@
 
                 <TextView
                     android:id="@+id/subtotalTxt"
+                    style="@style/textStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="S/-"
-                    style="@style/textStyle"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView5" />
 
                 <TextView
                     android:id="@+id/textView12"
+                    style="@style/textStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="IGV (18%)"
                     android:layout_marginTop="8dp"
-                    style="@style/textStyle"
+                    android:text="IGV (18%)"
                     app:layout_constraintStart_toStartOf="@+id/textView5"
                     app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
                 <TextView
                     android:id="@+id/igvTxt"
+                    style="@style/textStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="S/-"
-                    style="@style/textStyle"
                     app:layout_constraintEnd_toEndOf="@+id/subtotalTxt"
                     app:layout_constraintTop_toTopOf="@+id/textView12" />
 
@@ -114,21 +129,21 @@
 
                 <TextView
                     android:id="@+id/textView17"
+                    style="@style/textStyleBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total"
-                    style="@style/textStyleBold"
                     android:layout_marginTop="8dp"
+                    android:text="Total"
 
                     app:layout_constraintStart_toStartOf="@+id/textView12"
                     app:layout_constraintTop_toBottomOf="@+id/view6" />
 
                 <TextView
                     android:id="@+id/totalTxt"
+                    style="@style/textStyleBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="S/-"
-                    style="@style/textStyleBold"
                     app:layout_constraintEnd_toEndOf="@+id/igvTxt"
                     app:layout_constraintTop_toTopOf="@+id/textView17" />
 
@@ -146,14 +161,15 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@drawable/white_background"
-                android:padding="8dp"
-                android:layout_height="match_parent">
+                android:padding="8dp">
 
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"                    android:text="Método de pago"
+                    android:layout_height="wrap_content"
+                    android:text="Método de pago"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -168,11 +184,11 @@
 
                 <TextView
                     android:id="@+id/textView13"
+                    style="@style/textStyleBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tarjeta"
-                    style="@style/textStyleBold"
                     android:layout_marginStart="8dp"
+                    android:text="Tarjeta"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView8"
                     app:layout_constraintStart_toEndOf="@+id/imageView8"
                     app:layout_constraintTop_toTopOf="@+id/imageView8" />
@@ -190,15 +206,15 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button"
+                style="@android:style/Widget.Button"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/green_button_background"
-                style="@android:style/Widget.Button"
-                android:layout_height="wrap_content"
                 android:text="Ordenar ahora"
-                android:textSize="18sp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
         </LinearLayout>
     </ScrollView>

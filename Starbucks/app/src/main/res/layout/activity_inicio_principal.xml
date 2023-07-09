@@ -171,6 +171,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/homeBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -183,7 +184,6 @@
                         android:src="@drawable/baseline_home_24" />
 
                     <TextView
-                        android:textStyle="bold"
                         android:id="@+id/textView9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -191,7 +191,8 @@
                         android:text="Home"
                         android:textAlignment="center"
                         android:textColor="@color/white"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -239,6 +240,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/CartBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -255,10 +257,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="Shop"
-                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textColor="#FFA6A6AB"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </LinearLayout>
