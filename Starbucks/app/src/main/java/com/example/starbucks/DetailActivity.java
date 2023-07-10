@@ -43,18 +43,18 @@ public class DetailActivity extends AppCompatActivity {
         descriptionTxt.setText(object.getDescription());
         numberOrderTxt.setText(""+numberOrder);
         startTxt.setText(object.getStar()+"");
-        addToCartBtn.setText("Añadido al carrito - S/ "+Math.round(numberOrder*object.getPrecio()));
+        addToCartBtn.setText("Añadido al carrito - S/ "+String.format("%.2f",numberOrder*object.getPrecio()));
 
         plusBtn.setOnClickListener(v -> {
             numberOrder = numberOrder + 1;
             numberOrderTxt.setText(""+numberOrder);
-            addToCartBtn.setText("Añadido al carrito - S/ "+Math.round(numberOrder*object.getPrecio()));
+            addToCartBtn.setText("Añadido al carrito - S/ "+String.format("%.2f",numberOrder*object.getPrecio()));
         });
 
         minusBtn.setOnClickListener(v -> {
             numberOrder = numberOrder - 1;
             numberOrderTxt.setText(""+numberOrder);
-            addToCartBtn.setText("Añadido al carrito - S/ "+Math.round(numberOrder*object.getPrecio()));
+            addToCartBtn.setText("Añadido al carrito - S/ "+String.format("%.2f",numberOrder*object.getPrecio()));
         });
 
         addToCartBtn.setOnClickListener(v -> {

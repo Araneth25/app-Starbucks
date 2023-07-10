@@ -75,14 +75,18 @@ public class CartActivity extends AppCompatActivity {
     }
 
     private void calcularCart(){
-        double percentageIgv = 0.18 ;
-        igv =  Math.round((managmentCart.getTotalPrecio()*percentageIgv*100.0))/100.0;
+        double percentageIgv = 1.18 ;
+        double subtotal=  Math.round((managmentCart.getTotalPrecio()/percentageIgv*100.0))/100.0;
 
-        double total = Math.round((managmentCart.getTotalPrecio()+igv)*100.0)/100;
-        double itemTotal = Math.round(managmentCart.getTotalPrecio()*100.0)/100.0;
+        double igv = ((managmentCart.getTotalPrecio()-subtotal)*100.0)/100;
+        String formattedIgv = String.format("%.2f", igv);
+        double Total = Math.round(managmentCart.getTotalPrecio()*100.0)/100.0;
 
-        totalpreciotxt.setText("S/"+itemTotal);
-        igvtxt.setText("S/"+igv);
-        totaltxt.setText("S/"+total);
+        // SUBTOTAL
+        totalpreciotxt.setText("S/ "+subtotal);
+        // IGV CON EL 18% - COMIDAS, RESTAURANTES EN PERU
+        igvtxt.setText("S/ "+formattedIgv);
+        // TOTAL
+        totaltxt.setText("S/ "+Total);
     }
 }
