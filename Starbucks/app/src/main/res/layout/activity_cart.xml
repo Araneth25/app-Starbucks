@@ -11,12 +11,44 @@
         android:id="@+id/emptyTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tu carrito está vacio"
+        android:text="Ay no!"
+        android:textColor="#0E5535"
+        android:textSize="45sp"
+        android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/scrollViewC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/empty02Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Todavía no agregaste productos a tu carrito."
+        android:textColor="#0E5535"
+        android:textSize="22sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollViewC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emptyTxt"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+
+    <ImageView
+        android:id="@+id/gif"
+        android:layout_width="276dp"
+        android:layout_height="256dp"
+        android:src="@drawable/coffe1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollViewC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty02Txt"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ScrollView
         android:id="@+id/scrollViewC"

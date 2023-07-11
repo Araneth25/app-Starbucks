@@ -21,9 +21,9 @@ public class CartActivity extends AppCompatActivity {
     private RecyclerView recyclerViewList;
     private ManagmentCart managmentCart;
     private double igv;
-    private TextView totalpreciotxt, totaltxt, emptytxt, igvtxt;
+    private TextView totalpreciotxt, totaltxt, emptytxt, emptytxt01, igvtxt;
     private ScrollView scrollView;
-    private ImageView backbtn;
+    private ImageView backbtn,gif;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +50,8 @@ public class CartActivity extends AppCompatActivity {
         scrollView = findViewById(R.id.scrollViewC);
         backbtn = findViewById(R.id.backBtn);
         emptytxt = findViewById(R.id.emptyTxt);
-
+        emptytxt01 = findViewById(R.id.empty02Txt);
+        gif = findViewById(R.id.gif);
     }
 
     private void initList(){
@@ -67,9 +68,13 @@ public class CartActivity extends AppCompatActivity {
 
         if(managmentCart.getListCart().isEmpty()){
             emptytxt.setVisibility(View.VISIBLE);
+            emptytxt01.setVisibility(View.VISIBLE);
+            gif.setVisibility(View.VISIBLE);
             scrollView.setVisibility(View.GONE);
         }else{
             emptytxt.setVisibility(View.GONE);
+            emptytxt01.setVisibility(View.GONE);
+            gif.setVisibility(View.GONE);
             scrollView.setVisibility(View.VISIBLE);
         }
     }
