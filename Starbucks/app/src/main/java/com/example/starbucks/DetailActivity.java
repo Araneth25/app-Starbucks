@@ -15,7 +15,7 @@ import com.example.starbucks.Helper.ManagmentCart;
 public class DetailActivity extends AppCompatActivity {
     private Button addToCartBtn;
     private TextView plusBtn, minusBtn, titleTxt, feeTxt, descriptionTxt, numberOrderTxt, startTxt;
-    private ImageView picFood;
+    private ImageView picFood, backBtn;
     private FoodDomain object;
     private int numberOrder = 1;
     private ManagmentCart managmentCart;
@@ -29,6 +29,11 @@ public class DetailActivity extends AppCompatActivity {
 
         initView();
         getBundle();
+        setVariable();
+    }
+
+    private void setVariable() {
+        backBtn.setOnClickListener(v -> finish());
     }
 
     private void getBundle(){
@@ -73,5 +78,6 @@ public class DetailActivity extends AppCompatActivity {
         minusBtn = findViewById(R.id.MinusCardBtn);
         picFood =  findViewById(R.id.productoPic);
         startTxt = findViewById(R.id.startTxt);
+        backBtn = findViewById(R.id.backdBtn);
     }
 }
